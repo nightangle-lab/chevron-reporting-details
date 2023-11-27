@@ -2,7 +2,8 @@
     font-family: sans-serif;
 }
 th, td {
-	
+	padding: 10px;
+    	font-size: 0.9em;
 	text-align: center;
 }
 th {

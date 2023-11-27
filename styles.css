@@ -13,3 +13,10 @@ th {
 td {
     background-color: #E6E5E4;
 }
+#header {
+    background-color: black;
+    display: flex;
+    color: white;
+    width: fit-content;
+    padding: 8px;
+}

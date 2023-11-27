@@ -1,7 +1,11 @@
+*{
+	 font-size: 0.9em;
+    font-family: sans-serif;
 th, td {
 	padding: 15px;
 	text-alignz: center;
 }
 th {
-	background-color: green;
+	background-color: #009879;
+	color: white;
 }

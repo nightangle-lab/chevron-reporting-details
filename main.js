@@ -35,7 +35,12 @@
         });
       });
     }
- function performSearch() {
+document.addEventListener('DOMContentLoaded', function() {
+    // Your script code goes here
+
+    document.getElementById('searchButton').addEventListener('click', performSearch);
+
+    function performSearch() {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInput");
         filter = input.value.toUpperCase();
@@ -44,17 +49,19 @@
 
         for (i = 1; i < tr.length; i++) { // Start from 1 to skip the header row
             tds = tr[i].getElementsByTagName("td");
+            var rowVisible = false;
             for (var j = 0; j < tds.length; j++) {
                 td = tds[j];
                 if (td) {
                     txtValue = td.textContent || td.innerText;
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
+                        rowVisible = true;
                         break; // Show the row and move to the next row
-                    } else {
-                        tr[i].style.display = "none"; // Hide the row if no match
                     }
                 }
             }
+            tr[i].style.display = rowVisible ? "" : "none"; // Show or hide the row based on visibility
         }
     }
+});
+

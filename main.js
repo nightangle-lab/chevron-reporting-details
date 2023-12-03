@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("searchInput");
         filter = input.value.toUpperCase();
-        table = document.getElementById("data-table");
+        table = document.getElementById("csvData");
         tr = table.getElementsByTagName("tr");
 
         for (i = 1; i < tr.length; i++) { // Start from 1 to skip the header row

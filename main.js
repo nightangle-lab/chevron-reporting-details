@@ -2,7 +2,7 @@
   dev = "Coded by Mizanurrahman" ;
   status = "Connected" ;
   console.log(status);
-  console.log(dev);
+  
 }
    // Replace 'your-file.csv' with the path to your CSV file
     Papa.parse('data.csv', {

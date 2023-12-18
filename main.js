@@ -1,6 +1,6 @@
 { 
   dev = "Coded by Mizanurrahman" ;
-  status = "Connected" ;
+  let status = "Connected" ;
   console.log(status);
   
 }

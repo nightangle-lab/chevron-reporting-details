@@ -1,5 +1,5 @@
 { 
-  dev = "Coded by Mizanurrahman" ;
+  const dev = "Coded by Mizanurrahman" ;
   let status = "Connected" ;
   console.log(status);
   
